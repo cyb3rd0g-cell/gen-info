@@ -1,0 +1,17 @@
+Fix The USB Drive Wrong Size Issue With Cmd Prompt
+
+cmd
+diskpart
+list disk
+select disk 1 (Careful! Choose the correct number here. See note above.)
+list partition (Inspect the results to double-check this is the right disk)
+clean
+list partition (There should be none)
+create partition primary
+list partition (There should be one)
+format fs=fat32 quick
+list partition (There should still be one)
+exit
+
+Disclimer: 
+If you try to use these commands on your own computer, make sure to select the correct number for "select disk 1". Yours might be at a different number, and not 1, so you don't end up deleting wrong partitions.
