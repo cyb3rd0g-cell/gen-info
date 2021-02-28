@@ -14,4 +14,5 @@ list partition (There should still be one)
 exit
 
 Disclimer: 
-If you try to use these commands on your own computer, make sure to select the correct number for "select disk 1". Yours might be at a different number, and not 1, so you don't end up deleting wrong partitions.
+If you try to use these commands on your own computer,
+make sure to select the correct number for "select disk 1". Yours might be at a different number, and not 1, so you don't end up deleting wrong partitions.
